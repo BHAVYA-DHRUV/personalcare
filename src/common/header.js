@@ -117,7 +117,7 @@ const Header = () => {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">
-                  <img src="../assets/images/logo.svg" alt="Logo" />
+                  <img src="../../public/assets/images/logo.svg" alt="Logo" />
                 </Link>
               </div>
               <div className="cs_main_header_right">
