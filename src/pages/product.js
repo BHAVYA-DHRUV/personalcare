@@ -18,7 +18,7 @@ const Products = () => {
   async function FetchData() {
     try {
       await axios
-        .get(`/products}`)
+        .get(`https://personalcarebackend.onrender.com/products}`)
         .then((response) => {
           setProducts(response.data["product"]);
         });
