@@ -10,7 +10,7 @@ const CategoryProducts = () => {
   useEffect(() => {
     axios
       .get(
-        `https://personalcarebackend.onrender.com/category/${id}`
+        `/category/${id}`
       )
       .then((response) => {
         setProducts(response.data["products"]);

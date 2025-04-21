@@ -18,7 +18,7 @@ const Contact = () => {
     try {
       axios
         .post(
-          "https://personalcarebackend.onrender.com/storeContactInquiry",
+          "/storeContactInquiry",
           userDetails
         )
         .then((response) => {

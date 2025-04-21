@@ -6,7 +6,7 @@ const Products = () => {
   let [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("https://personalcarebackend.onrender.com/products")
+      .get("/products")
       .then((response) => {
         setProducts(response.data["data"]);
       });
@@ -18,7 +18,7 @@ const Products = () => {
   async function FetchData() {
     try {
       await axios
-        .get(`https://personalcarebackend.onrender.com/products}`)
+        .get(`/products}`)
         .then((response) => {
           setProducts(response.data["product"]);
         });

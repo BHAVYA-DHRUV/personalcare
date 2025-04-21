@@ -49,7 +49,7 @@ async function handleSubmit(e) {
 
   try {
     let response = await axios.post(
-      `https://personalcarebackend.onrender.com/storeProductInquiry`,
+      `/storeProductInquiry`,
       inquiry
     );
     console.log(response);
