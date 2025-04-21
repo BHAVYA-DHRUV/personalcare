@@ -6,7 +6,7 @@ const Products = () => {
   let [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("/products")
+      .get("https://personalcarebackend.onrender.com/products")
       .then((response) => {
         setProducts(response.data["data"]);
       });

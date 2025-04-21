@@ -34,7 +34,7 @@ const Header = () => {
 
   useEffect(() => {
     axios
-      .get("/categories")
+      .get("https://personalcarebackend.onrender.com/categories")
       .then((response) => {
         setCategories(response.data["categories"]); // Ensure the key matches API response
       });

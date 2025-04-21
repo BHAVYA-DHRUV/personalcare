@@ -27,7 +27,7 @@ function ProductDetails() {
   async function FetchData() {
     try {
       await axios
-        .get(`/products/${id}`)
+        .get(`https://personalcarebackend.onrender.com/products/${id}`)
         .then((response) => {
           setProductDetails(response.data["product"]);
           setImages(response.data["product"]["images"]);
